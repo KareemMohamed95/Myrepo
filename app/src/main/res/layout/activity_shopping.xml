@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/blueback">
+
+    <ListView
+        android:id="@+id/SCLIST"
+        android:layout_width="0dp"
+        android:layout_height="318dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PriceViewT"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Confirm1"
+        app:layout_constraintEnd_toStartOf="@+id/Confirm1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <Button
+        android:id="@+id/Confirm1"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="27dp"
+        android:text="Select Delivery Address"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PriceViewT"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="10dp"
+        android:text="Total Price"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Confirm1"
+        app:layout_constraintEnd_toEndOf="@+id/PriceViewT"
+        app:layout_constraintStart_toStartOf="@+id/PriceViewT"
+        app:layout_constraintTop_toBottomOf="@+id/SCLIST" />
+
+</android.support.constraint.ConstraintLayout>

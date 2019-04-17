@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Project</string>
+    <string-array name="Questions">
+        <item>What is the name of your pet ?</item>>
+        <item>What is the name of your first school ?</item>>
+        <item>Who is your best friend ?</item>>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    >
+</resources>
